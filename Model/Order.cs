@@ -19,7 +19,7 @@ namespace Model
         public string product { get; set; }
         public int amount { get; set; }
 
-        //sets object info toString
+        //sets object info toString #1
         public string toString()
         {
             string desc;
