@@ -24,6 +24,12 @@ namespace Chapter8Basis
             Console.WriteLine("=========GenericController<Order>=========");
             GenericController<Order> generic = CreateGenericServices();
 
+            //create order
+            string name = "tacos";
+            Guid id = Guid.NewGuid();
+            int amount = 12;
+
+            Order newOrder = new Order(name, amount, id);
 
             Console.WriteLine("Hit any key to quit");
             Console.ReadKey();

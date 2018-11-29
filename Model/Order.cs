@@ -8,9 +8,24 @@ namespace Model
 {
     public class Order
     {
+
+        public Order(string product, int amount, Guid id)
+        {
+            this.product = product;
+            this.amount = amount;
+        }
         //TEG added
         public Guid id { get; set; }
         public string product { get; set; }
         public int amount { get; set; }
+
+        //sets object info toString
+        public string toString()
+        {
+            string desc;
+            desc = "Order of " + amount + " " + product + " with " + id;
+
+            return desc;
+        }
     }
 }
